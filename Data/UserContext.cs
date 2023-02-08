@@ -21,6 +21,10 @@ namespace estudos_crud.Data
       userCar.HasKey(x => x.Id);
       userCar.Property(x => x.Id).HasColumnName("id").ValueGeneratedOnAdd();
       userCar.Property(x => x.Name).HasColumnName("name").IsRequired();
+      userCar.Property(x => x.Phone).HasColumnName("phone").IsRequired();
+      userCar.Property(x => x.Plate).HasColumnName("palte").IsRequired();
+      userCar.Property(x => x.Color).HasColumnName("color").IsRequired();
+      userCar.Property(x => x.RegisterCar).HasColumnName("registerCar");
     }
   }
 }
