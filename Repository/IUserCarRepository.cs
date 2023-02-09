@@ -1,8 +1,9 @@
+
 using estudos_crud.Models;
 
-namespace estudos_crud.Services
+namespace estudos_crud.Repository
 {
-  public interface IUserCar
+  public interface IUserCarRepository
   {
     Task<UserCar> CreateUserCar(UserCar userCar);
 
