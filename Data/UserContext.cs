@@ -25,6 +25,7 @@ namespace estudos_crud.Data
       userCar.Property(x => x.Plate).HasColumnName("palte").IsRequired();
       userCar.Property(x => x.Color).HasColumnName("color").IsRequired();
       userCar.Property(x => x.RegisterCar).HasColumnName("registerCar");
+      userCar.Property(x => x.Password).HasColumnName("password");
     }
   }
 }
