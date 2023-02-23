@@ -44,6 +44,9 @@ $ dotnet build
 # aplicação rodando em:
   - Local:   http://localhost:3500/ 
 ```
+### ▶ swagger
+```php
+
 # swagger rodando em:
   - Local:   http://localhost:3500/swagger/index.html
 ```
