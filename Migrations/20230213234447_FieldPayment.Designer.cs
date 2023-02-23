@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using estudos_crud.Data;
 
@@ -10,9 +11,11 @@ using estudos_crud.Data;
 namespace estudoscrud.Migrations
 {
     [DbContext(typeof(UserContext))]
-    partial class UserContextModelSnapshot : ModelSnapshot
+    [Migration("20230213234447_FieldPayment")]
+    partial class FieldPayment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,11 +34,6 @@ namespace estudoscrud.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("color");
 
-                    b.Property<string>("Cpf")
-                        .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("cpf");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext")
@@ -46,8 +44,7 @@ namespace estudoscrud.Migrations
                         .HasColumnName("password");
 
                     b.Property<int>("Payment")
-                        .HasColumnType("int")
-                        .HasColumnName("payment");
+                        .HasColumnType("int");
 
                     b.Property<string>("Phone")
                         .IsRequired()

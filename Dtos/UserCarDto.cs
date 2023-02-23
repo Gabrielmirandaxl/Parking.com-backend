@@ -1,7 +1,6 @@
-
-namespace estudos_crud.Models
+namespace estudos_crud.Dtos
 {
-  public class UserCar
+  public class UserCarDto
   {
 
     public int Id { get; set; }
@@ -10,8 +9,5 @@ namespace estudos_crud.Models
     public string? Plate { get; set; }
     public string? Cpf { get; set; }
     public string? Color { get; set; }
-    public string? Password { get; set; }
-    public int Payment { get; set; }
-    public DateTime RegisterCar { get; set; }
   }
 }

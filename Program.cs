@@ -1,4 +1,7 @@
 using estudos_crud.Data;
+using estudos_crud.middlewares;
+using estudos_crud.Repository;
+using estudos_crud.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +18,11 @@ builder.Services.AddDbContext<UserContext>(options =>
   ServerVersion.AutoDetect(connectDatabase));
 });
 
+builder.Services.AddScoped<IUserCarService, UserCarService>();
+builder.Services.AddScoped<IUserCarRepository, UserCarRepository>();
+
+builder.Services.AddAutoMapper(typeof(Program));
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -24,6 +32,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseMiddleware(typeof(BadRequest));
+app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

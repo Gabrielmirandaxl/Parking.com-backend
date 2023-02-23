@@ -6,9 +6,13 @@ namespace estudos_crud.Services
   {
     Task<UserCar> CreateUserCar(UserCar userCar);
 
+    Task<string> RemoveUserCar(string password);
+
     Task<IEnumerable<UserCar>> GetAllCars();
 
     Task<UserCar> SearchPlate(string plate);
+
+    Task<UserCar> GetOneUser(int id);
 
   }
 }
