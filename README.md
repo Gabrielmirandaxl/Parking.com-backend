@@ -1,22 +1,20 @@
 # Olá, tudo bem? Me chamo Gabriel e seja bem vindo(a)! 👋
 
-# Challenge - Back End - BlueTechnology
+# Gerenciamento de estacionamento (ESTACIONA.COM)
 
- Estou participando do processo seletivo da Blue Technology, e para melhor organização dividi o projeto em dois onde a aplicação do front end está em outro repositorio clique <a href="https://github.com/Gabrielmirandaxl/challenge-front-BlueTechnology">aqui</a> para visualizar o projeto.
+ O estaciona.com é um projeto que tem como objetivo ajudar no gerenciamento de veículos no estacionamento! O sistema foi desenvolvido em `c#` utilizando `.net`.
  
-Venho por meio deste repositorio entregar a aplicação `back end`, CRUD feito com `c#` utilizando o framework `.net`  e `mysql` . Espero que você goste!
-
-
 ## Funcionalidades
 
 - Validações nos campos
 - Tratamento de erro
-- Criar usuário
-- Pesquisar um usuário através do email
-- Buscar um usuário
-- Buscar todos os usuário
-- Atualizar um usuário
-- Excluir um usuário
+- Cadastrar um veículo
+- Pesquisar um veículo através da placa
+- Mostrar detalhes do veículo(dono, cpf, placa, taxa por hora no estacionamento...)
+- Retirar veículo através da senha
+- Quantidade de veículos no estacionamento
+- Calcular a hora que o veículo ficou no estacionamento
+
 
 
 
@@ -30,10 +28,10 @@ Além disso, é bom ter um editor para trabalhar com código como [VSCode](https
 
 ```php
 # clonar este repositório
-$ git clone https://github.com/Gabrielmirandaxl/BackEnd-BlueTechnology
+$ git clone https://github.com/Gabrielmirandaxl/Parking.com-backend
 
 # acesse a pasta do projeto 
-$ cd BackEnd-BlueTechnology
+$ cd Parking.com-backend
 
 # digite esse comando
 $ dotnet build
@@ -51,7 +49,7 @@ $ dotnet build
 <br>
 
 # Swagger(documentação da api)
-<img width="900" heigth="900"  src="https://github.com/Gabrielmirandaxl/gif/blob/main/swagger.PNG">
+<img width="900" heigth="900"  src="https://github.com/Gabrielmirandaxl/gif/blob/main/projeto-parking.PNG">
 
 
 ## 🌐 aplicação
