@@ -58,7 +58,7 @@ $ dotnet build
 
 
 ## 🌐 aplicação
-<img width="900" heigth="900"  src="https://github.com/Gabrielmirandaxl/gif/blob/main/2023-01-14%2021-46-26.gif">
+<img width="900" heigth="900"  src="">
 
 <br>
 
